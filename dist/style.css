@@ -32,6 +32,9 @@
 .navigation a:hover {
   color: #070707;
 }
+.navigation li img {
+  display: none;
+}
 
 .section-view {
   top: 0;
@@ -204,6 +207,7 @@
 .footer__title {
   font-family: "Gilroy-Bold";
   line-height: 42px;
+  font-size: 34px;
   text-align: center;
   color: #070707;
   margin-top: 114px;
@@ -240,7 +244,95 @@
   line-height: 17px;
   text-align: center;
   color: #828282;
-  margin-top: 45px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
+}
+
+@media all and (max-width: 750px) {
+  .wrapper {
+    width: 316px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .section-view__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-view__title {
+    margin-top: 20px;
+  }
+
+  .section-view__description {
+    margin-top: 23px;
+  }
+
+  .section-view__button-block {
+    display: none;
+  }
+
+  .section-view__foto,
+.section-view__foto img {
+    width: 100%;
+    height: 478px;
+    object-fit: cover;
+    margin-top: 36px;
+  }
+
+  .about-me {
+    padding: 81px 0 76px;
+  }
+
+  .about-me__content {
+    margin-top: 29px;
+    font-family: "Gilroy-Medium";
+    font-size: 18px;
+    line-height: 22px;
+    height: 261px;
+  }
+
+  .skills__form {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .skills__skill-item ~ .skills__skill-item {
+    margin-top: 80px;
+  }
+
+  .Portfolio__title {
+    padding: 81px 0 65px;
+    width: 132px;
+    height: 43px;
+  }
+
+  .Portfolio__foto wrapper {
+    margin-top: 77px;
+  }
+
+  .footer {
+    padding: 0 0 90px;
+  }
+
+  .footer__title {
+    margin-top: 82px;
+  }
+
+  .footer__button {
+    width: 316px;
+    height: 42px;
+  }
+
+  .footer__content {
+    margin-top: 27px;
+  }
+
+  .footer__foto {
+    margin-top: 48px;
+  }
 }
